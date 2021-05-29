@@ -82,7 +82,7 @@ jobs:
 
   release-note:
     name: release note
-    needs: setup
+    needs: publish
     runs-on: ubuntu-latest
     steps:
       - name: checkout
