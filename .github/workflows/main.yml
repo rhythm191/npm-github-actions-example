@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       version: ${{ steps.package-version.outputs.version }}
-      tag-name: v${{ onsteps.package-version.outputs.versi }}
+      tag-name: v${{ steps.package-version.outputs.version }}
       is-pre-verion: ${{ steps.pre-version.outputs.pre-version }}
       tag-exist: ${{ steps.tag-exist.outputs.exists }}
     steps:
